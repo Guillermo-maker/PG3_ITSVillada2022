@@ -13,7 +13,7 @@ class Alumno:
         else:
             print("Libre")
 
-#EJEMPLO numero 2
+#EJEMPLO numero 2 
 
 alumno1=Alumno()
 alumno1.inicializar("diego",2)
