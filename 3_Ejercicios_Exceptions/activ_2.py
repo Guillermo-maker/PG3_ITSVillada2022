@@ -15,6 +15,6 @@ while True:
             
             
 
-    except (ValueError, ZeroDivisionError):
+    except ( ZeroDivisionError):
         print ("ingrese numeros correctamente...no se puede dividir por cero")
     
