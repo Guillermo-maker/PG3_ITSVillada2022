@@ -13,6 +13,6 @@ while True:
             print ("esto fue el ejercio 2... muchas gracia por su participacion...")
             break
 
-    except IndexError:
+    except (IndexError,ValueError, ZeroDivisionError):
         print( "ingres el numero del mes correctamente")
 
