@@ -1,0 +1,2 @@
+hola esto es un archivo de texto
+una serie de string 233399200
