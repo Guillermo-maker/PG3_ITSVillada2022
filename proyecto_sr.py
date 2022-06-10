@@ -46,7 +46,7 @@ def listen():
             talk("Diga orden")
             print("Escuchando...")
             voice = listener.listen(source)
-            rec = listener.recognize_google(voice, language='es-ES')
+            rec = listener.recognize_google(voice, language ='es-ES')
             rec = rec.lower()
             print (rec)
             if name in rec:
