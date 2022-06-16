@@ -10,7 +10,7 @@ while True:
         print (meses[pickmes - 1])
         menu = int (input ("para terminar...(0)...para continuar...(1): "))
         if menu == 0:
-            print ("esto fue el ejercio 2... muchas gracia por su participacion...")
+            print ("esto fue el ejercio 3... muchas gracia por su participacion...")
             break
 
     except (IndexError,ValueError):

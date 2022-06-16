@@ -10,7 +10,7 @@ while True:
         menu = int (input ("para terminar...(0)...para continuar...(1): "))
 
         if menu == 0:
-            print ("esto fue el ejercio 1... muchas gracia por su participacion...")
+            print ("esto fue el ejercio 4... muchas gracia por su participacion...")
             break
             
             
