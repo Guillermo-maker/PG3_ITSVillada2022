@@ -1,0 +1,131 @@
+import requests
+import json
+response=requests.get("https://api.kanye.rest")
+print(response.status_code)
+response.json()
+response.headers['content-type']
+print(response.text)
+usuario=json.loads(response.text)
+
+frase=(usuario["quote"])
+print(frase)
+html= open("Inspiracion Pura"+'.html','w')
+mensaje= '''''
+<html lang="en">
+<head>
+    <script src="main.py"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="cambio">
+    <button >Frase inspradora Kanye West</button>
+    <h1 id="saludar">'''+frase+'''</h1>
+
+<div class="contentBox">
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar()">Rojo</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar2()">Verde</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar3()">Rosa</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar4()">Azul</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar5()">Amarillo</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar6()">Violeta</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar7()">Celeste</button>
+    <div class="border"></div>
+    <div class="border"></div>
+
+  </div>
+  <div id="second" class="buttonBox">
+    <button onclick="cambiar8()">Bordo</button>
+    <div class="border"></div>
+    <div class="border"></div>
+
+  </div>
+    <div id="second" class="buttonBox">
+    <button onclick="cambiar9()">Gris</button>
+    <div class="border"></div>
+    <div class="border"></div>
+    
+  </div>
+    <div id="second" class="buttonBox">
+    <button onclick="cambiar10()">Naranja</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div> 
+
+</div>
+</body>
+<script>
+var hello = prompt("Introduzca su nombre:", "Mateo Fernandez");
+    function cambiar() {
+		document.body.style.background = "red";
+	} 
+    function cambiar2() {
+		document.body.style.background = "green";
+	} 
+    function cambiar3() {
+		document.body.style.background = "pink";
+	} 
+    function cambiar4() {
+		document.body.style.background = "blue";
+	} 
+    function cambiar5() {
+		document.body.style.background = "yellow";
+	} 
+    
+    function cambiar6() {
+		document.body.style.background = "violet";
+	} 
+    function cambiar7() {
+		document.body.style.background = "#00aae4";
+	} 
+    function cambiar8() {
+		document.body.style.background = "brown";
+	} 
+    function cambiar9() {
+		document.body.style.background = "gray";
+	} 
+    function cambiar10() {
+		document.body.style.background = "orange";
+	} 
+   
+</script>
+</html>
+
+
+'''''
+
+html.write(mensaje)
+html.close()
